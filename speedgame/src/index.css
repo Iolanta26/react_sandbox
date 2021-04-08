@@ -2,8 +2,10 @@
 
 body {
   font-family: "RocknRoll One", sans-serif;
-  background-color: aqua;
-  background-image: linear-gradient(to right top);
+  background: #fffc45;
+  background: -webkit-linear-gradient(top right, #fffc45, #fe5ccb);
+  background: -moz-linear-gradient(top right, #fffc45, #fe5ccb);
+  background: linear-gradient(to bottom left, #fffc45, #fe5ccb);
   background-attachment: fixed;
   text-align: center;
 }

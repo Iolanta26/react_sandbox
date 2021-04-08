@@ -7,9 +7,9 @@ class App extends Component {
   state = {
     circles: [
       { id: 1, color: "green" },
-      { id: 2, color: "yellow" },
+      { id: 2, color: "blue" },
       { id: 3, color: "red" },
-      { id: 4, color: "orange" },
+      { id: 4, color: "purple" },
     ],
   };
 

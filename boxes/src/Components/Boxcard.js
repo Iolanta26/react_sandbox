@@ -1,6 +1,6 @@
 import React from "react";
 
-const Box = (props) => {
+const Boxcard = (props) => {
   const handleClick = () => {
     console.log("wow");
   };
@@ -16,4 +16,4 @@ const Box = (props) => {
   );
 };
 
-export default Box;
+export default Boxcard;

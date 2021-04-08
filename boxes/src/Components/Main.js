@@ -1,72 +1,59 @@
-import React, { Component } from "react";
-import Box from "./Box";
+import React from "react";
+import { Switch, Route, Link } from "react-router-dom";
+import AnimalsList from "./AnimalsList";
+import BoxesList from "./BoxesList";
 
-class Main extends Component {
-  state = {
-    persons: [
-      {
-        name: "Iolanta",
-        age: 25,
-        title: "Designer",
-      },
-      {
-        name: "Mary",
-        age: 34,
-        title: "Doctor",
-      },
-      {
-        name: "Sarah",
-        age: 48,
-        title: "CEO",
-      },
-    ],
-  };
-  handleClick = () => {
-    this.setState({
-      persons: [
-        {
-          name: "Iolanta",
-          age: 25,
-          title: "Developer",
-        },
-        {
-          name: "Mary",
-          age: 34,
-          title: "Theacher",
-        },
-        {
-          name: "Sarah",
-          age: 48,
-          title: "Doctor",
-        },
-      ],
-    });
-  };
+const Home = () => {
+  return (
+    <div>
+      <h1>Here is my home page</h1>
+    </div>
+  );
+};
 
-  render() {
-    return (
-      <main>
-        <button onClick={this.handleClick}>click me</button>
-        <div>
-          <Box
-            name={this.state.persons[0].name}
-            age={this.state.persons[0].age}
-            title={this.state.persons[0].title}
-          />
-          <Box
-            name={this.state.persons[1].name}
-            age={this.state.persons[1].age}
-            title={this.state.persons[1].title}
-          />
-          <Box
-            name={this.state.persons[2].name}
-            age={this.state.persons[2].age}
-            title={this.state.persons[2].title}
-          />
-        </div>
-      </main>
-    );
-  }
-}
+const Gallery = () => {
+  return (
+    <div>
+      <h1>This is my gallery page</h1>
+    </div>
+  );
+};
+
+const Nav = () => {
+  return (
+    <div>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/gallery">Gallery</Link>
+          </li>
+          <li>
+            <Link to="/boxes">Boxes</Link>
+          </li>
+          <li>
+            <Link to="/animals">Animals</Link>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  );
+};
+
+const Main = () => {
+  return (
+    <div>
+      <Nav />
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/gallery" component={Gallery} />
+        <Route path="/boxes" component={BoxesList} />
+        <Route path="/animals" component={AnimalsList} />
+      </Switch>
+    </div>
+  );
+};
 
 export default Main;

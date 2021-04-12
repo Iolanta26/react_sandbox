@@ -14,6 +14,8 @@ const EndGameText = (score) => {
     return "Amazing results! Try more! :)";
   } else if (score < 20) {
     return "You are a true hero! :)";
+  } else if (score > 20) {
+    return "You are an absolute champion! :)";
   }
 };
 

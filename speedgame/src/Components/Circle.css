@@ -7,22 +7,23 @@
   align-items: center;
   justify-content: center;
   margin: 1rem;
+  box-shadow: 0 0 10px #f3f3f3;
 }
 
 .green {
-  background-color: green;
+  background-color: rgb(111, 111, 228);
 }
 
 .blue {
-  background-color: blue;
+  background-color: rgb(111, 111, 228);
 }
 
 .purple {
-  background-color: purple;
+  background-color: rgb(111, 111, 228);
 }
 
 .red {
-  background-color: red;
+  background-color: rgb(111, 111, 228);
 }
 
 .active {

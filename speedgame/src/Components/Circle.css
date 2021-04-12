@@ -24,3 +24,7 @@
 .red {
   background-color: red;
 }
+
+.active {
+  background: url(../assets/active.jpg);
+}

@@ -12,7 +12,7 @@
 
 .gameover_box {
   background: white;
-  padding: 2rem;
+  padding: 3rem;
   width: 100%;
   height: 50%;
   border-radius: 5px;
@@ -23,9 +23,11 @@
 }
 
 .gameover_box button {
-  background: lightgray;
+  /* background: lightgray; */
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 3px;
+  right: 3px;
   cursor: pointer;
+  font-size: 1.5rem;
+  box-shadow: none;
 }

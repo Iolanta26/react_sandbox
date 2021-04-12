@@ -26,5 +26,6 @@
 }
 
 .active {
-  background: url(../assets/active.jpg);
+  background: url(../assets/active3.jpg);
+  cursor: pointer;
 }
